@@ -12,3 +12,27 @@ $ mysql -h localhost -u raka -p < migration.sql
 $ go build -o order-server
 $ ./order-server
 ```
+
+## Endpoints
+- [POST]    /order
+```
+Request Body:
+{
+    "fullName": "Made Raka",
+    "email": "maderakateja@gmail.com",
+    "items": [
+        {
+            "title": "Bunga Gemitir",
+            "count": 3,
+            "price": 10000
+        },
+        {
+            "title": "Ceper",
+            "count": 5,
+            "price": 50000
+        }
+    ]
+}
+```
+- [GET]     /order/:orderId
+- [GET]     /order/:orderId/html
