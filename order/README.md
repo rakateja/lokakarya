@@ -1,6 +1,6 @@
-## Order mini-application
+# Order mini-application
 
-### Installation
+## Installation
 - Execute migration file, `migration.sql`
 - go get .
 - go build -o server
