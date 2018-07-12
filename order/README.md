@@ -1,4 +1,5 @@
 # Order mini-application
+This is just a small application to demonstrate how to write http application using Go.
 
 ## Requirements
 - Go

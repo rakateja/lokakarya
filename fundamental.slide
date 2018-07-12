@@ -56,13 +56,14 @@ Run the binary
 
 Like other programming language, const used to define value that never change
 
-.code fundamental.go /START OMIT/,,/END OMIT/
+	const fullName = "Jack Dorsey"
+	const port = 1234
 
 
 Steps:
 - define `const`
-- pick identifier, (ie: firstName)
-- assign the value, (ie: "Raka")
+- pick identifier, (ie: fullName)
+- assign the value, (ie: "Jack Dorsey")
 
 * Variable
 
@@ -70,19 +71,24 @@ Defining variable is very similar with const
 
 Declaring variable
 
-.code declare_variable.go
+	var fullName string
+	var point int
 
 Initiating variable
 
-.code initiating_variable.go
+	fullName = "Jack Dorsey"
+	point = 1200
 
-.code variable.go
+	var username string = "jack"
 
 * Type Inference
 
 Assign value without defining type
-
-.code type_inference.go
+	
+	var username = "jack"
+	
+	fullName := "Jack Dorsey"
+	point := 1200
 
 * Looping
 - Go has only one looping construct, the `for` loop.
