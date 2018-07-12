@@ -236,9 +236,16 @@ Assign value without defining type
 - Package `database/sql` provides a generic interface around SQL (or SQL-like) databases.
 - `github.com/go-sql-driver/mysql`, a MySQL-Driver for Go's database/sql package
 
+Get external package
+
 	go get -u github.com/go-sql-driver/mysql
 
-.code mysql.go
+Usage:
+
+	import "database/sql"
+	import _ "github.com/go-sql-driver/mysql"
+
+	db, err := sql.Open("mysql", "user:password@/dbname")
 
 * Database Access (Practice)
 Let's create simple Go program to access mysql database
