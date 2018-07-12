@@ -1,5 +1,7 @@
 CREATE DATABASE `workshop_minimal_order`;
 
+USE `workshop_minimal_order`;
+
 CREATE TABLE `orders` (
 	order_id INT NOT NULL AUTO_INCREMENT,
 	order_number VARCHAR(15) NOT NULL,

@@ -6,7 +6,9 @@ This is just a small application to demonstrate how to write http application us
 - MySQL
 
 ## Installation
-- Execute migration file, `migration.sql`
-- go get .
-- go build -o server
-- ./server -h
+```
+$ go get .
+$ mysql -h localhost -u raka -p < migration.sql
+$ go build -o order-server
+$ ./order-server
+```
