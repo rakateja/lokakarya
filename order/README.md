@@ -8,7 +8,7 @@ This is just a small application to demonstrate how to write http application us
 ## Installation
 ```
 $ go get .
-$ mysql -h localhost -u raka -p < migration.sql
+$ mysql -h localhost -u root -p < migration.sql
 $ go build -o order-server
 $ ./order-server
 ```

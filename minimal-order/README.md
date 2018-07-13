@@ -7,7 +7,7 @@
 ## Installation
 ```
 $ go get .
-$ mysql -h localhost -u raka -p < migration.sql
+$ mysql -h localhost -u root -p < migration.sql
 $ go build -o minimal-order main.go
 $ ./minimal-order
 ```

@@ -90,6 +90,45 @@ Assign value without defining type
 	fullName := "Jack Dorsey"
 	point := 1200
 
+* Slice
+Slices are analogous to arrays in other languages, but have some unusual properties.
+
+Arrays have their place, but they're a bit inflexible, so you don't see them too often in Go code. Slices, though, are everywhere. 
+
+	letters := []string{"a", "b", "c", "d"}
+
+A slice can be created with the built-in function called make, which has the signature,
+
+	var s []byte
+	s = make([]byte, 5, 5)
+	// s == []byte{0, 0, 0, 0, 0}
+
+Use keyword `append` to append new item
+
+	letters := []string{"a", "b", "c", "d"}
+	letters = append(letters, "f")
+
+* Map
+Go provides a built-in map type that implements a hash table. A Go map type looks like this:
+
+	map[KeyType]ValueType
+
+Set value
+	
+	m := make(map[string]int)
+	m["jack"] = 24
+
+Get value from map using key
+	
+	val := m["jack"]
+
+	// Safely way
+	val, ok := ["jack"]
+	if !ok {
+		// do something when key doesn't exists
+	}
+	// do something with value
+
 * Looping
 - Go has only one looping construct, the `for` loop.
 - The basic for loop has three components separated by semicolons: the init statement, the condition statement, the post statement
