@@ -285,7 +285,7 @@ Usage:
 
 	db, err := sql.Open("mysql", "user:password@/dbname")
 
-* Database Access (Practice)
+* Database Access
 Let's create simple Go program to access mysql database
 
 Flow:
